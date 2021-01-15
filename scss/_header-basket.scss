@@ -1,11 +1,26 @@
 .header-basket {
     position: relative;
 
-    &:hover {
-        .basket-details {
-            display: block;
+    .basket-container {
+        display: inline-block;
+
+        &:hover {
+            .basket-details {
+                display: block;
+            }
         }
     }
+
+    .basket-container {
+        display        : flex;
+        justify-content: flex-end;
+
+
+    }
+
+    @media #{vars.$media-medium} {}
+
+
 }
 
 .basket {
@@ -44,9 +59,9 @@
         display: none;
     }
 
-    @media #{vars.$media-large} {
+    @media #{vars.$media-medium} {
         .basket-title {
-            display: block;
+            display    : block;
             margin-left: 10px;
             font-size  : 14px;
             font-weight: vars.$font-weight-bold;
@@ -59,8 +74,9 @@
 
 .basket-details {
     display   : none;
-    width     : 300px;
+    width     : 280px;
     position  : absolute;
+    top       : 60px;
     right     : 0;
     z-index   : 100;
     background: #fff;

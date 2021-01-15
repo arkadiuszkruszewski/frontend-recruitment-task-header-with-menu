@@ -147,10 +147,16 @@ input[type=submit] {
 .header-basket {
   position: relative;
 }
-.header-basket:hover .basket-details {
+.header-basket .basket-container {
+  display: inline-block;
+}
+.header-basket .basket-container:hover .basket-details {
   display: block;
 }
-
+.header-basket .basket-container {
+  display: flex;
+  justify-content: flex-end;
+}
 .basket {
   display: flex;
   padding-bottom: 2em;
@@ -179,7 +185,7 @@ input[type=submit] {
 .basket .basket-title {
   display: none;
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 960px) {
   .basket .basket-title {
     display: block;
     margin-left: 10px;
@@ -190,8 +196,9 @@ input[type=submit] {
 
 .basket-details {
   display: none;
-  width: 300px;
+  width: 280px;
   position: absolute;
+  top: 60px;
   right: 0;
   z-index: 100;
   background: #fff;
