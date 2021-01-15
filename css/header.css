@@ -21,6 +21,10 @@ body {
   visibility: hidden;
 }
 
+button, input[type=submit] {
+  cursor: pointer;
+}
+
 .header-top {
   border-bottom: 1px solid #d7d7d7;
 }
@@ -96,6 +100,9 @@ body {
 .header-basket {
   position: relative;
 }
+.header-basket:hover .basket-details {
+  display: block;
+}
 
 .basket {
   display: flex;
@@ -129,6 +136,7 @@ body {
 }
 
 .basket-details {
+  display: none;
   width: 300px;
   position: absolute;
   right: 0;

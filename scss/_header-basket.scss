@@ -1,6 +1,11 @@
 .header-basket {
     position: relative;
 
+    &:hover {
+        .basket-details {
+            display: block;
+        }
+    }
 }
 
 .basket {
@@ -44,7 +49,7 @@
 
 
 .basket-details {
-
+    display   : none;
     width     : 300px;
     position  : absolute;
     right     : 0;
@@ -147,6 +152,7 @@
                 height    : 20px;
                 border    : none;
                 background: no-repeat center center;
+
 
                 &.edit {
                     background-image: url(../img/icon__edit.png);
