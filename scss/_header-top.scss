@@ -1,0 +1,62 @@
+$border-color: #d7d7d7;
+
+.header-top {
+
+    border-bottom: 1px solid $border-color;
+
+    .container {
+        display        : flex;
+        justify-content: space-between;
+    }
+
+    ul {
+        margin : 0;
+        padding: 0;
+
+        li {
+            display: inline-block;
+        }
+
+        @media #{vars.$media-medium} {
+            &.account li {
+                border-left: 1px solid $border-color;
+                padding-left: 1em;
+
+                &:last-child {
+                    border-right: 1px solid $border-color;
+                }
+            }
+        }
+
+    }
+
+    a {
+        display        : inline-block;
+        text-decoration: none;
+        color          : #000;
+        padding        : 1em 1em 1em 1.5em;
+
+        background: no-repeat center left;
+
+        &:hover,
+        &:focus {
+            color: vars.$color-accent;
+        }
+    }
+
+    .contact-tel {
+        background-image: url(../img/icon__phone.svg);
+    }
+
+    .contact-mail {
+        background-image: url(../img/icon__mail.svg);
+    }
+
+    .account-login {
+        background-image: url(../img/icon__login.svg);
+    }
+
+    .account-new {
+        background-image: url(../img/icon__myaccount.svg);
+    }
+}

@@ -1,0 +1,94 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1240px;
+}
+
+.logo-search-basket {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.header-top {
+  border-bottom: 1px solid #d7d7d7;
+}
+.header-top .container {
+  display: flex;
+  justify-content: space-between;
+}
+.header-top ul {
+  margin: 0;
+  padding: 0;
+}
+.header-top ul li {
+  display: inline-block;
+}
+@media only screen and (min-width: 960px) {
+  .header-top ul.account li {
+    border-left: 1px solid #d7d7d7;
+    padding-left: 1em;
+  }
+  .header-top ul.account li:last-child {
+    border-right: 1px solid #d7d7d7;
+  }
+}
+.header-top a {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  padding: 1em 1em 1em 1.5em;
+  background: no-repeat center left;
+}
+.header-top a:hover, .header-top a:focus {
+  color: #ea2260;
+}
+.header-top .contact-tel {
+  background-image: url(../img/icon__phone.svg);
+}
+.header-top .contact-mail {
+  background-image: url(../img/icon__mail.svg);
+}
+.header-top .account-login {
+  background-image: url(../img/icon__login.svg);
+}
+.header-top .account-new {
+  background-image: url(../img/icon__myaccount.svg);
+}
+
+.header-search {
+  max-width: 100%;
+  width: 600px;
+}
+.header-search form {
+  position: relative;
+}
+.header-search input {
+  border: none;
+  background: none;
+}
+.header-search input[type=search] {
+  width: 100%;
+  border-bottom: 1px solid #191919;
+  padding: 1em 3em 1em 1em;
+  color: #a3a2a2;
+}
+.header-search input[type=submit] {
+  width: 3em;
+  height: 3em;
+  right: 0;
+  z-index: 1;
+  position: absolute;
+  background: url(../img/icon__lens.svg) no-repeat center center;
+}
+
+.basket-details {
+  position: absolute;
+  z-index: 100;
+}
+
+/*# sourceMappingURL=header.css.map */

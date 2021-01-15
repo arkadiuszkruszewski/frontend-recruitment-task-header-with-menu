@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/header.css">
 
     <title>Document</title>
 </head>
@@ -13,95 +14,108 @@
     <header class="header">
 
         <div class="header-top">
-            <a href="tel:293939098">293 939 098</a>
-            <a href="mailto:kontakt@aurorabox.pl">kontakt@aurorabox.pl</a>
-            <a href="">Zaloguj się</a>
-            <a href="">Załóź konto</a>
-        </div>
-
-        <div class="header-logo"><img src="img/logo__aurora-box.png" alt="logo__aurora-box"></div>
-
-        <div class="header-search">
-            <form><input type="search" name="search" placeholder="Co chcesz kupić?"><input type="submit"></form>
-        </div>
-
-        <div class="header-basket">
-            <div>
-                <div class="backet-icon">
-                    <span>2</span>
-                </div>
-                <div>Twój koszyk</div>
-            </div>
-            <div class="basket-details">
-                <div>Produkty w koszyku: <span>2</span></div>
-                <div>Kwota do zapłaty: <span>207.00zł</span></div>
-
-                <ul class="products-list">
-                    <li class="product">
-                        <div><img src="img/miniatura.jpg" alt=""></div>
-                        <div>
-                            <h6>Biustonosz push-up line mos 12</h6>
-                            <p class="price">59.00 zł</p>
-                            <div>
-                                <p class="quantity">Ilość: <input type="number"></p>
-                                <button class="edit"></button>
-                                <button class="delete"></button>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="product discount">
-                        <div><img src="img/miniatura.jpg" alt=""></div>
-                        <div>
-                            <h6>Biustonosz push-up line mos 12</h6>
-                            <p class="price">59.00 zł <span class="price-before">109,00zł</span></p>
-                            <div>
-                                <p class="quantity">Ilość: <input type="number"></p>
-                                <button class="edit"></button>
-                                <button class="delete"></button>
-                            </div>
-                        </div>
-                    </li>
+            <div class="container">
+                <ul class="contact">
+                    <li><a  href="tel:293939098" class="contact-tel">293 939 098</a></li>
+                    <li><a href="mailto:kontakt@aurorabox.pl" class="contact-mail">kontakt@aurorabox.pl</a></li>
                 </ul>
 
-                <a href="" class="button">Zobacz koszyk</a>
+                <ul class="account">
+                    <li><a href="" class="account-login">Zaloguj się</a></li>
+                    <li><a href="" class="account-new">Załóź konto</a></li>
+                </ul>
             </div>
         </div>
 
-        <nav class="header-nav">
-            <ul>
-                <li>
-                    <a href="">Kategorie</a>
-                    <ul class="submenu">
-                        <li>
-                            <a href="">Biustonosze</a>
-                            <ul class="submenu">
-                                <li><a href="">Bardotka</a></li>
-                                <li><a href="">Minimizer</a></li>
-                                <li><a href="">Multiway</a></li>
-                                <li><a href="">Push-up</a></li>
-                                <li><a href="">Soft</a></li>
-                                <li><a href="">Sportowe</a></li>
-                                <li><a href="">Usztywniane</a></li>
-                            </ul>
+        <div class="container logo-search-basket">
+            <div class="header-logo"><img src="img/logo__aurora-box.png" alt="logo__aurora-box"></div>
+
+            <div class="header-search">
+                <form><input type="search" name="search" placeholder="Co chcesz kupić?"><input type="submit" value=""></form>
+            </div>
+
+            <div class="header-basket">
+                
+                <div>
+                    <div class="backet-icon">
+                        <span>2</span>
+                    </div>
+                    <div>Twój koszyk</div>
+                </div>
+
+                <div class="basket-details">
+                    <div>Produkty w koszyku: <span>2</span></div>
+                    <div>Kwota do zapłaty: <span>207.00zł</span></div>
+
+                    <ul class="products-list">
+                        <li class="product">
+                            <div><img src="img/miniatura.jpg" alt=""></div>
+                            <div>
+                                <h6>Biustonosz push-up line mos 12</h6>
+                                <p class="price">59.00 zł</p>
+                                <div>
+                                    <p class="quantity">Ilość: <input type="number"></p>
+                                    <button class="edit"></button>
+                                    <button class="delete"></button>
+                                </div>
+                            </div>
                         </li>
-                        <li><a href="">Body</a></li>
-                        <li><a href="">Majtki</a></li>
-                        <li><a href="">Stroje kąpielowe</a></li>
-                        <li><a href="">Bielizna erotyczna</a></li>
-                        <li><a href="">Stroje sportowe</a></li>
-                        <li><a href="">Bielizna wieczorowa</a></li>
+                        <li class="product discount">
+                            <div><img src="img/miniatura2.jpg" alt=""></div>
+                            <div>
+                                <h6>Biustonosz push-up line mos 12</h6>
+                                <p class="price">59.00 zł <span class="price-before">109,00zł</span></p>
+                                <div>
+                                    <p class="quantity">Ilość: <input type="number"></p>
+                                    <button class="edit"></button>
+                                    <button class="delete"></button>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
-                </li>
-                <li><a href="">Nowości</a></li>
-                <li><a href="">Promocje</a></li>
-                <li><a href="">Wyprzedaże</a></li>
-                <li><a href="">Kolekcje sezonu</a></li>
-                <li><a href="">Nasza oferta</a></li>
-                <li><a href="">Trendy 2021</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Kontakt</a></li>
-            </ul>
-        </nav>
+
+                    <a href="" class="button">Zobacz koszyk</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <nav class="header-nav">
+                <ul>
+                    <li>
+                        <a href="">Kategorie</a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="">Biustonosze</a>
+                                <ul class="submenu">
+                                    <li><a href="">Bardotka</a></li>
+                                    <li><a href="">Minimizer</a></li>
+                                    <li><a href="">Multiway</a></li>
+                                    <li><a href="">Push-up</a></li>
+                                    <li><a href="">Soft</a></li>
+                                    <li><a href="">Sportowe</a></li>
+                                    <li><a href="">Usztywniane</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Body</a></li>
+                            <li><a href="">Majtki</a></li>
+                            <li><a href="">Stroje kąpielowe</a></li>
+                            <li><a href="">Bielizna erotyczna</a></li>
+                            <li><a href="">Stroje sportowe</a></li>
+                            <li><a href="">Bielizna wieczorowa</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Nowości</a></li>
+                    <li><a href="">Promocje</a></li>
+                    <li class="is-promo"><a href="">Wyprzedaże</a></li>
+                    <li><a href="">Kolekcje sezonu</a></li>
+                    <li><a href="">Nasza oferta</a></li>
+                    <li><a href="">Trendy 2021</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
 
     </header>
 </body>

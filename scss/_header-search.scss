@@ -1,0 +1,30 @@
+.header-search {
+    max-width: 100%;
+    width: 600px;
+    form {
+        position: relative;
+    }
+
+    input {
+        border    : none;
+        background: none;
+    }
+
+    input[type=search] {
+        width: 100%;
+        border-bottom: 1px solid #191919;
+        padding      : 1em 3em 1em 1em;
+
+        color: #a3a2a2;
+    }
+
+    input[type=submit] {
+        width   : 3em;
+        height  : 3em;
+        right   : 0;
+        z-index : 1;
+        position: absolute;
+
+        background: url(../img/icon__lens.svg) no-repeat center center;
+    }
+}

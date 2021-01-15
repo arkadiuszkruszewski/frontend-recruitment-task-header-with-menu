@@ -1,0 +1,25 @@
+@use 'vars';
+
+body {
+    font-family: vars.$font-family;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: vars.$max-width;
+}
+
+.logo-search-basket {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+
+@import 'header-top';
+@import 'header-logo';
+@import 'header-search';
+@import 'header-basket';
+@import 'header-nav';
