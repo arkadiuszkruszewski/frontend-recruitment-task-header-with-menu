@@ -5,15 +5,51 @@ body {
 
 .container {
   margin: 0 auto;
-  padding: 0 2em;
+  padding: 0 1em;
   max-width: 1240px;
+}
+@media only screen and (min-width: 960px) {
+  .container {
+    padding: 0 2em;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .logo-search-basket {
   margin-top: 1em;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  flex-flow: wrap;
+}
+.logo-search-basket .header-logo {
+  flex: 1 50%;
+}
+.logo-search-basket .header-search {
+  flex: 2 500px;
+}
+.logo-search-basket .header-basket {
+  flex: 1;
+}
+@media only screen and (min-width: 960px) {
+  .logo-search-basket {
+    align-items: flex-end;
+    padding: 0 2em;
+    justify-content: space-between;
+  }
+  .logo-search-basket .header-logo {
+    flex: 1;
+  }
+  .logo-search-basket .header-search {
+    flex: 2 500px;
+    order: 2;
+  }
+  .logo-search-basket .header-basket {
+    flex: 1;
+    order: 3;
+  }
 }
 
 .is-hidden {
@@ -21,7 +57,8 @@ body {
   visibility: hidden;
 }
 
-button, input[type=submit] {
+button,
+input[type=submit] {
   cursor: pointer;
 }
 
@@ -52,8 +89,19 @@ button, input[type=submit] {
   display: inline-block;
   text-decoration: none;
   color: #000;
-  padding: 1em 1em 1em 1.5em;
-  background: no-repeat center left;
+}
+@media only screen and (max-width: 600px) {
+  .header-top a {
+    text-indent: -99999px;
+    padding: 1em;
+    background: no-repeat center center;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .header-top a {
+    padding: 1em 1em 1em 1.5em;
+    background: no-repeat center left;
+  }
 }
 .header-top a:hover, .header-top a:focus {
   color: #ea2260;
@@ -72,8 +120,7 @@ button, input[type=submit] {
 }
 
 .header-search {
-  max-width: 100%;
-  width: 600px;
+  max-width: 600px;
 }
 .header-search form {
   position: relative;
@@ -130,9 +177,15 @@ button, input[type=submit] {
   color: #fff;
 }
 .basket .basket-title {
-  margin-left: 10px;
-  font-size: 14px;
-  font-weight: 700;
+  display: none;
+}
+@media only screen and (min-width: 1200px) {
+  .basket .basket-title {
+    display: block;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 700;
+  }
 }
 
 .basket-details {

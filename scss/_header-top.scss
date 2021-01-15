@@ -19,7 +19,7 @@ $border-color: #d7d7d7;
 
         @media #{vars.$media-medium} {
             &.account li {
-                border-left: 1px solid $border-color;
+                border-left : 1px solid $border-color;
                 padding-left: 1em;
 
                 &:last-child {
@@ -34,10 +34,19 @@ $border-color: #d7d7d7;
         display        : inline-block;
         text-decoration: none;
         color          : #000;
-        padding        : 1em 1em 1em 1.5em;
 
-        background: no-repeat center left;
+        @media #{vars.$media-xtrasmall} {
+            text-indent: -99999px;
+            padding    : 1em;
+            background: no-repeat center center;
+        }
 
+        @media #{vars.$media-medium} {
+            padding: 1em 1em 1em 1.5em;
+            background: no-repeat center left;
+        }
+
+    
         &:hover,
         &:focus {
             color: vars.$color-accent;

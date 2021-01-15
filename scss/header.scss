@@ -5,24 +5,73 @@ body {
 }
 
 .container {
-    margin: 0 auto;
-    padding: 0 2em;
+    margin : 0 auto;
+    padding: 0 1em;
+
+    @media #{vars.$media-medium} {
+        padding: 0 2em;
+    }
+
     max-width: vars.$max-width;
+}
+
+img {
+    max-width: 100%;
+    height   : auto;
 }
 
 .logo-search-basket {
     margin-top: 1em;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+
+    display  : flex;
+    flex-flow: wrap;
+
+    .header-logo {
+        flex: 1 50%;
+    }
+
+    .header-search {
+        flex: 2 500px;
+    }
+
+    .header-basket {
+        flex: 1;
+    }
+
+    @media #{vars.$media-medium} {
+
+        align-items       : flex-end;
+        padding           : 0 2em;
+        justify-content: space-between;
+
+        .header-logo {
+            flex: 1;
+        }
+
+        .header-search {
+            flex : 2 500px;
+            order: 2;
+        }
+
+        .header-basket {
+            flex : 1;
+            order: 3;
+        }
+
+
+
+    }
+
+
 }
 
 .is-hidden {
-    display: none;
+    display   : none;
     visibility: hidden;
 }
 
-button, input[type=submit] {
+button,
+input[type=submit] {
     cursor: pointer;
 }
 

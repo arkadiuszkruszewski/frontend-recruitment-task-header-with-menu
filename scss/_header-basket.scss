@@ -41,10 +41,19 @@
     }
 
     .basket-title {
-        margin-left: 10px;
-        font-size  : 14px;
-        font-weight: vars.$font-weight-bold;
+        display: none;
     }
+
+    @media #{vars.$media-large} {
+        .basket-title {
+            display: block;
+            margin-left: 10px;
+            font-size  : 14px;
+            font-weight: vars.$font-weight-bold;
+        }
+    }
+
+
 }
 
 

@@ -11,7 +11,8 @@ $max-width: 1240px;
 
 // @media #{vars.$media-} {}
 
-$media-small : "only screen and (min-width: 600px)";
+$media-xtrasmall : "only screen and (max-width: 600px)";
+$media-small : "only screen and (min-width: 601px)";
 $media-medium: "only screen and (min-width: 960px)";
 $media-large : "only screen and (min-width: 1200px)";
 
