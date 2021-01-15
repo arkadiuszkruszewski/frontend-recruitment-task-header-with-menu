@@ -2,6 +2,21 @@
 
     margin: 2em 0;
 
+
+    >ul {
+        margin : 0;
+        padding: 0;
+
+        >li {
+            display: block;
+
+            >a {
+                padding       : 1em 0;
+                text-transform: uppercase;
+            }
+        }
+    }
+
     li {
         position: relative;
     }
@@ -17,8 +32,6 @@
 
     @media #{vars.$media-medium} {
         >ul {
-            margin         : 0;
-            padding        : 0;
             display        : flex;
             justify-content: space-between;
 
@@ -26,28 +39,16 @@
                 display: inline;
 
                 >a {
-                    padding       : 1em 0;
-                    text-transform: uppercase;
+                    padding: 1em 0;
                 }
             }
         }
     }
 
     .submenu {
-        margin  : 0;
-        padding : 0;
-        position: absolute;
-        display: none;
-
-        .submenu {
-            left: 100%;
-            top : 0;
-        }
-
-        z-index   : 100;
-        background: #fff;
-        border    : 3px solid #eeeeee;
-        box-shadow: #00000010 0 0 13px;
+        margin     : 0;
+        padding    : 0;
+        display : none;
 
         li {
             margin : 0;
@@ -64,6 +65,21 @@
                 }
             }
         }
+
+        @media #{vars.$media-medium} {
+            position: absolute;
+
+            .submenu {
+                left: 100%;
+                top : 0;
+            }
+
+            z-index   : 100;
+            background: #fff;
+            border    : 3px solid #eeeeee;
+            box-shadow: #00000010 0 0 13px;
+        }
+
     }
 
     .is-promo {

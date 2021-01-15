@@ -287,6 +287,17 @@ input[type=submit] {
 .header-nav {
   margin: 2em 0;
 }
+.header-nav > ul {
+  margin: 0;
+  padding: 0;
+}
+.header-nav > ul > li {
+  display: block;
+}
+.header-nav > ul > li > a {
+  padding: 1em 0;
+  text-transform: uppercase;
+}
 .header-nav li {
   position: relative;
 }
@@ -299,8 +310,6 @@ input[type=submit] {
 }
 @media only screen and (min-width: 960px) {
   .header-nav > ul {
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: space-between;
   }
@@ -309,22 +318,12 @@ input[type=submit] {
   }
   .header-nav > ul > li > a {
     padding: 1em 0;
-    text-transform: uppercase;
   }
 }
 .header-nav .submenu {
   margin: 0;
   padding: 0;
-  position: absolute;
   display: none;
-  z-index: 100;
-  background: #fff;
-  border: 3px solid #eeeeee;
-  box-shadow: #00000010 0 0 13px;
-}
-.header-nav .submenu .submenu {
-  left: 100%;
-  top: 0;
 }
 .header-nav .submenu li {
   margin: 0;
@@ -338,6 +337,19 @@ input[type=submit] {
 }
 .header-nav .submenu li a:hover {
   background-color: #f7f7f7;
+}
+@media only screen and (min-width: 960px) {
+  .header-nav .submenu {
+    position: absolute;
+    z-index: 100;
+    background: #fff;
+    border: 3px solid #eeeeee;
+    box-shadow: #00000010 0 0 13px;
+  }
+  .header-nav .submenu .submenu {
+    left: 100%;
+    top: 0;
+  }
 }
 .header-nav .is-promo > a {
   color: #ecc7d0;
