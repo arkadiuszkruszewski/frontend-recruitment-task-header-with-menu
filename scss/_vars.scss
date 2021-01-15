@@ -1,11 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
 $font-family: 'Lato',sans-serif;
+$font-weight-light: 300;
 $font-weight-regular: 400;
 $font-weight-bold: 700;
 $font-weight-black: 900;
 
 $max-width: 1240px;
+
+
+// @media #{vars.$media-} {}
 
 $media-small : "only screen and (min-width: 600px)";
 $media-medium: "only screen and (min-width: 960px)";

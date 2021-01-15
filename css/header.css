@@ -1,10 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 body {
   font-family: "Lato", sans-serif;
 }
 
 .container {
   margin: 0 auto;
+  padding: 0 2em;
   max-width: 1240px;
 }
 
@@ -13,6 +14,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+}
+
+.is-hidden {
+  display: none;
+  visibility: hidden;
 }
 
 .header-top {
@@ -215,6 +221,68 @@ body {
   color: white;
   text-decoration: none;
   font-size: 15px;
+}
+
+.header-nav {
+  margin: 2em 0;
+}
+.header-nav li {
+  position: relative;
+}
+.header-nav a {
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+}
+@media only screen and (min-width: 960px) {
+  .header-nav > ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-nav > ul > li {
+    display: inline;
+  }
+  .header-nav > ul > li > a {
+    padding: 1em 0;
+    text-transform: uppercase;
+  }
+}
+.header-nav .submenu {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  display: none;
+  z-index: 100;
+  background: #fff;
+  border: 3px solid #eeeeee;
+  box-shadow: #00000010 0 0 13px;
+}
+.header-nav .submenu .submenu {
+  left: 100%;
+  top: 0;
+}
+.header-nav .submenu li {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+.header-nav .submenu li a {
+  font-weight: 300;
+  padding: 1em 2em;
+  display: block;
+}
+.header-nav .submenu li a:hover {
+  background-color: #f7f7f7;
+}
+.header-nav .is-promo > a {
+  color: #ecc7d0;
+}
+.header-nav li:hover > .submenu {
+  display: block;
 }
 
 /*# sourceMappingURL=header.css.map */

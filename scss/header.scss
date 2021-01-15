@@ -6,6 +6,7 @@ body {
 
 .container {
     margin: 0 auto;
+    padding: 0 2em;
     max-width: vars.$max-width;
 }
 
@@ -16,6 +17,10 @@ body {
     align-items: flex-end;
 }
 
+.is-hidden {
+    display: none;
+    visibility: hidden;
+}
 
 
 @import 'header-top';
